@@ -1,0 +1,118 @@
+<h1>Git Concepts</h1>
+
+<ul>
+<li>DVCS - Distributed Version Control System</li>
+</ul>
+
+<h2>File Storage</h2>
+
+<ul>
+<li>Work</li>
+<li>Index (cache/stage)</li>
+<li>Object Store</li>
+</ul>
+
+<h1>Git Commands</h1>
+
+<h2>Getting help</h2>
+
+<ul>
+<li>help</li>
+</ul>
+
+<h2>Creating a project</h2>
+
+<ul>
+<li>init</li>
+<li>init --bare</li>
+</ul>
+
+<h2>Modifying files/index</h2>
+
+<ul>
+<li>add</li>
+<li>add -A</li>
+<li>add --patch</li>
+<li>rm</li>
+<li>mv</li>
+<li>commit</li>
+</ul>
+
+<h2>Branches</h2>
+
+<ul>
+<li>branch</li>
+<li>checkout -b</li>
+<li>checkout <branch></li>
+</ul>
+
+<h2>Comparing and patches</h2>
+
+<ul>
+<li>diff <branch|commit|tag></li>
+<li>diff --cached</li>
+<li>diff HEAD~</li>
+<li>apply -v --index</li>
+<li>apply -v</li>
+</ul>
+
+<h2>Cleaning up</h2>
+
+<ul>
+<li>reset</li>
+<li>reset --hard</li>
+<li>clean -fd</li>
+<li>rebase -i</li>
+</ul>
+
+<h2>Working with others</h2>
+
+<ul>
+<li>push</li>
+<li>pull</li>
+<li>merge</li>
+<li>rebase</li>
+<li>cherry-pick</li>
+</ul>
+
+<h2>Releasing</h2>
+
+<ul>
+<li>tag</li>
+<li>push --tags</li>
+<li>archive</li>
+</ul>
+
+<h1>Strategies</h1>
+
+<ul>
+<li>Commit large blocks of unrelated code (BAD)</li>
+<li>Commit small changes frequently (GOOD)</li>
+<li>Work on multiple tasks and tease apart commits (GOOD)</li>
+<li>Commit large blocks of code in fixed time intervals and tease apart into
+organized commits (GOOD)</li>
+</ul>
+
+<p>All of the above strategies aside from the top one are valid strategies to use
+with git. If you prefer to commit small changes frequently, make a change and
+commit. If you prefer to Work on lots of things at once and deal with
+committing later, that strategy works too, but become really good friends with
+git add --patch if this is your style. Or, if you commit in blocks of code in
+time intervals and break things apart later, that can be done as well. Your
+tool of choice in that scenario is rebase -i. Remember, you can always alter
+history until you push.</p>
+
+<h1>Github Flavor</h1>
+
+<ul>
+<li>Fork</li>
+<li>Pull Request (PR)</li>
+</ul>
+
+<h2>Basic config:</h2>
+
+<p><a href="https://drupal.org/documentation/git/configure">https://drupal.org/documentation/git/configure</a></p>
+
+<h2>Advanced config:</h2>
+
+<p><a href="https://github.com/disassembler/dotfiles/tree/master/git/gitconfig">https://github.com/disassembler/dotfiles/tree/master/git/gitconfig</a></p>
