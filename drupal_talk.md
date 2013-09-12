@@ -14,6 +14,8 @@
 ## Creating a project
 * init
 * init --bare
+* clone
+* clone --orphan
 
 ## Modifying files/index
 * add
